@@ -1,5 +1,5 @@
 {
-  "name": "oroja",
+  "name": "building-texture-editor",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IAlexandr/oroja.git"
+    "url": "git+https://github.com/IAlexandr/building-texture-editor.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/IAlexandr/oroja#readme",
+  "homepage": "https://github.com/IAlexandr/building-texture-editor#readme",
   "dependencies": {
     "babel-core": "^6.9.0",
     "babel-eslint": "^6.0.4",
