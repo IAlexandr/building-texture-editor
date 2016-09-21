@@ -5,16 +5,15 @@ import http from 'http';
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import router from './lib/router';
-// import auth from './lib/auth';
+import routers from './lib/server/routers';
+import options from './options';
 
 const app = express();
-app.use(cors({origin: true}));
-// auth(app);
+app.use(cors({ origin: true }));
 
 app.use(bodyParser.json({ limit: '1024mb' }));
 
-app.use(router);
+routers(app);
 
 const httpServer = http.Server(app);
 
@@ -31,11 +30,11 @@ const server = new WebpackDevServer(compiler, {
   }
 });
 
-server.listen(8080, () => {
+server.listen(options.PORT, () => {
   httpServer.listen(4000);
-/* eslint-disable no-console */
-console.log('App server listening on port 8080');
-console.log('Build app...');
+  /* eslint-disable no-console */
+  console.log('App server listening on port ', options.PORT);
+  console.log('Build app...');
 
-/* eslint-enable no-console */
+  /* eslint-enable no-console */
 });

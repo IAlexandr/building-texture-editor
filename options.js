@@ -5,11 +5,6 @@ const optionsSpec = {
     default: 'data/',
     env: 'BTE_SOURCE_DIR_PATH'
   },
-  dbType: {
-    required: true,
-    default: 'nedb', // nedb, mongodb
-    env: 'BTE_DB_TYPE'
-  },
   PORT: {
     required: true,
     default: '3001',
