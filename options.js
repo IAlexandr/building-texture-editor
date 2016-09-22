@@ -1,4 +1,5 @@
 const version = require('./package.json').version;
+const connections = require('./connections');
 const optionsSpec = {
   sourceDirPath: {
     required: true,
@@ -13,7 +14,8 @@ const optionsSpec = {
 };
 
 let options = {
-  version
+  version,
+  connections
 };
 
 export default {...options, ...Object.keys(optionsSpec).map((key) => {
