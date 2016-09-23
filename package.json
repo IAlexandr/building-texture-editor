@@ -50,6 +50,7 @@
     "react-tap-event-plugin": "^1.0.0",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
+    "simplify-js": "^1.2.1",
     "sphericalmercator": "^1.0.5",
     "style-loader": "^0.13.1",
     "superagent": "^2.0.0",
@@ -58,6 +59,7 @@
     "turf-area": "^3.0.12",
     "turf-featurecollection": "^1.0.1",
     "turf-meta": "^3.0.12",
+    "turf-simplify": "^3.0.12",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }
