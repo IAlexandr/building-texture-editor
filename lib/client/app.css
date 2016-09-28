@@ -47,3 +47,12 @@ Resizer.disabled {
 Resizer.disabled:hover {
     border-color: transparent;
 }
+
+circle.control-point {
+    fill: #F44336;;
+    fill-opacity: 0.35;
+}
+circle.control-point:hover {
+    stroke: #F44336;
+    stroke-width: 2px;
+}
