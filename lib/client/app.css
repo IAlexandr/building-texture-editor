@@ -56,3 +56,7 @@ circle.control-point:hover {
     stroke: #F44336;
     stroke-width: 2px;
 }
+
+.cesium-viewer-bottom {
+  display: none!important;
+}
