@@ -10,7 +10,12 @@ const optionsSpec = {
     required: true,
     default: '3001',
     env: 'BTE_PORT'
-  }
+  },
+  mongoDbUrl: {
+    required: true,
+    default: 'mongodb://10.10.10.247:27017/building-texture-editor',
+    env: 'BTE_MONGODBURL'
+  },
 };
 
 let options = {
