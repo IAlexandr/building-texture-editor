@@ -7,11 +7,20 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import routers from './lib/server/routers';
 import options from './options';
+import { routes, checkAccess, cookiesSession } from 'basic-auth';
+import createStore from './lib/server/authStore';
 
 const app = express();
+
+const router = new express.Router();
+const store = createStore();
+router.use(routes(store));
+
 app.use(cors({ origin: true }));
 
 app.use(bodyParser.json({ limit: '1024mb' }));
+app.use(cookiesSession());
+app.use('/api', router);
 
 routers(app);
 
